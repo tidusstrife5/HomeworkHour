@@ -3,8 +3,6 @@
 
 	<head>
 		<title>Homework Hour</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="dist/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="dist/css/bootstrap.css.map"/>
 		<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css"/>
@@ -40,8 +38,9 @@
 				  	<div class="col-lg-3">
 					    <div class="input-group">
 					      <div class="input-group-btn">
-					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Topics <span class="caret"></span></button>
-					        <ul class="dropdown-menu" role="menu">
+					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					        	<span id="topic">Topics</span> <span class="caret"></span></button>
+					        <ul class="dropdown-menu" id="search_bar_menu" role="menu">
 								<h5>Mathematics</h5>
 					        	<li><a href="#">Calculus</a></li>
 					        	<li><a href="#">Probability</a></li>
@@ -65,17 +64,30 @@
 		</section>
 
 		<section id="topic_list">
-			<div class="panel panel-default">
+			<div class="panel panel-default col-lg-3">
 				<div class="panel-body">
-					<ul class="nav nav-pills" role="tablist">
-					  	<li role="presentation" class="active"><a href="#">Mathematics</a></li>
-					  	<li role="presentation"><a href="#">Science</a></li>
+					<ul class="nav nav-pills" role="tablist" id="topic_tabs">
+					  	<li role="presentation" class="active"><a href="#math">Mathematics</a></li>
+					  	<li role="presentation"><a href="#science">Science</a></li>
 					  	<li role="presentation"><a href="#">Programming</a></li>
 					</ul>
+				</div>
+
+				<div class="panel-body">
+					<div class="list-group">
+					  	<a href="#" class="list-group-item">Cras justo odio</a>
+					  	<a href="#math" class="list-group-item">Dapibus ac facilisis in</a>
+					  	<a href="#science" class="list-group-item">Morbi leo risus</a>
+					  	<a href="#science" class="list-group-item">Porta ac consectetur ac</a>
+					  	<a href="#" class="list-group-item">Vestibulum at eros</a>
+					</div>
 				</div>
 			</div>
 		</section>
 	</body>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/script.js"></script>
 
 </html>
