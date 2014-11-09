@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Homework Hour</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="dist/css/bootstrap.css.map"/>
+		<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="dist/css/bootstrap-theme.css.map"/>
+	</head>
+
+	<body>
+		<section id="header">
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">
+							Homework Hour
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<form class="navbar-form navbar-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Sign In</a></li>
+								<li><a href="#">Register</a></li>
+								<li><a href="#">Help</a></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</section>
+
+		<section id="search">
+			<div class="well">
+				<div class="row">
+				  	<div class="col-lg-3">
+					    <div class="input-group">
+					      <div class="input-group-btn">
+					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Topics <span class="caret"></span></button>
+					        <ul class="dropdown-menu" role="menu">
+								<h5>Mathematics</h5>
+					        	<li><a href="#">Calculus</a></li>
+					        	<li><a href="#">Probability</a></li>
+					        	<li class="divider"></li>
+
+					        	<h5>Science</h5>
+				        		<li><a href="#">Physics</a></li>
+					        </ul>
+
+					      </div><!-- /btn-group -->
+					      <input type="text" class="form-control">
+
+					    </div><!-- /input-group -->
+
+				  	</div><!-- /.col-lg-6 -->
+					<div class="col-lg-2">
+						<button type="submit" class="btn btn-default">Search</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="topic_list">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<ul class="nav nav-pills" role="tablist">
+					  	<li role="presentation" class="active"><a href="#">Mathematics</a></li>
+					  	<li role="presentation"><a href="#">Science</a></li>
+					  	<li role="presentation"><a href="#">Programming</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</body>
+
+
+</html>
