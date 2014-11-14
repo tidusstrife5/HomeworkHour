@@ -1,3 +1,13 @@
-body {
-    background-color: #aabbcc;
+#page-wrapper{
+	padding: 0 30px;
+}
+#topic_list .topic_list{
+	display:none;
+}
+#topic_list .topic_list.first{
+	display:block;
+}
+#topic_list .topic_list .list-group .list-group-item.active{
+	color: #fff;
+	background-color: #428bca;
 }
