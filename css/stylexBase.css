@@ -11,4 +11,22 @@
 	color: #fff;
 	background-color: #428bca;
 }
+.loggedin{
+	color:white;
+}
+.loggedin a{
+	display:inline-block!important;
+	color:white!important;
+	text-decoration: underline;
+}
+#user-menu{
+	display:none;
+}
+#answer-question{
+	display:none;
+}
 table tr td{padding:10px;}
+
+.clear{
+	clear:both;
+}
