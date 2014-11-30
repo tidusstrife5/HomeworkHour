@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Homework Hour</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="dist/css/bootstrap.css.map"/>
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css"/>
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.css.map"/>
+	<link rel="stylesheet" href="css/stylexBase.css"/>
+</head>
+
+<body>
+	<section id="header">
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						Homework Hour
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<div id="user">
+
+					</div>
+					<form class="navbar-form navbar-right">
+						<ul id="navigation" class="nav navbar-nav">
+							<li><a href="#" class="" data-toggle="modal" data-target="#myModal">Sign In</a></li>
+							<li><a href="#" class="" data-toggle="modal" data-target="#myRegisterModal">Register</a></li>
+							<li><a href="#">Help</a></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</section>
+
+	<section id="search">
+		<div class="well">
+			<div class="row">
+				<div class="col-lg-7" id="user-menu">
+					<a href="create.html" class="btn btn-default">Create a question</a>
+				</div>
+				<div class="col-lg-3">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								<span id="topic">Topics</span> <span class="caret"></span></button>
+								<ul class="dropdown-menu" id="search_bar_menu" role="menu">
+									<h5>Mathematics</h5>
+									<li><a href="#">Calculus</a></li>
+									<li><a href="#">Probability</a></li>
+									<li class="divider"></li>
+
+									<h5>Science</h5>
+									<li><a href="#">Physics</a></li>
+								</ul>
+
+							</div><!-- /btn-group -->
+							<input type="text" class="form-control">
+
+						</div><!-- /input-group -->
+
+					</div><!-- /.col-lg-6 -->
+					<div class="col-lg-2">
+						<button type="submit" class="btn btn-default">Search</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="page-wrapper">
+			<div class="row">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<div class="panel-default panel">
+						<div class="panel-heading">Create your question</div>
+						<div class="panel-body">
+							<form onsubmit="return false">
+								<input type="text" name="question" class="form-control" placeholder="Title"><br>
+								<input type="text" class="form-control" placeholder="Topic"><br>
+								<textarea class="form-control" placeholder="Question" rows="10"></textarea><br>
+								<input type="submit" class="btn btn-default" id="submit-question" data-toggle="modal" data-target="#myQuestionModal" value="Submit">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Question Modal -->
+		<div class="modal fade" id="myQuestionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Success</h4>
+					</div>
+					<div class="modal-body">
+						Your question was successfully created. <br>
+						You will be redirected in 3 seconds ...
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Login Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Login</h4>
+					</div>
+					<div class="modal-body">
+						<label>Username</label>
+						<input type="text" name="username" id="username" class="form-control"><br>
+
+						<label>Password</label>
+						<input type="password" name="password" id="password" class="form-control"><br>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary" type="submit" id="login">Login</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Register Modal -->
+		<div class="modal fade" id="myRegisterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Register</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group col-lg-12">
+							<label>Username</label>
+							<input type="text" name="regUname" class="form-control" id="regUname" value="">
+						</div>
+						
+						<div class="form-group col-lg-6">
+							<label>Password</label>
+							<input type="password" name="" class="form-control" id="" value="">
+						</div>
+						
+						<div class="form-group col-lg-6">
+							<label>Repeat Password</label>
+							<input type="password" name="" class="form-control" id="" value="">
+						</div>
+
+						<div class="form-group col-lg-6">
+							<label>Email Address</label>
+							<input type="" name="" class="form-control" id="" value="">
+						</div>
+						
+						<div class="form-group col-lg-6">
+							<label>Repeat Email Address</label>
+							<input type="" name="" class="form-control" id="" value="">
+						</div>
+						<br class="clear">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary" type="submit" id="register">Register</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/script.js"></script>
+
+	</html>
