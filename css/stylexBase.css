@@ -145,3 +145,7 @@ div.list-group-item a{
  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: none!important;
 }
+
+.odd{
+	background-color:#f9f9f9!important;
+}
